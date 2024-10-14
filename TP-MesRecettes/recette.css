@@ -1,0 +1,270 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(209, 229, 246);
+    border: 2px solid white;
+}
+header h1{
+    margin-left: 20px;
+    color: green;
+}
+header h1 span{
+    color: red;
+}
+header h1 em{
+    color: yellow;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+header nav ul a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+}
+header nav ul a:hover{
+    color: blue;
+}
+header nav ul a:active{
+    color: red;
+}
+
+main{
+    border: 1px solid skyblue;
+    margin: 10px 0px 10px 0px;
+}
+section img{
+    width: 600px;
+    height: 400px;
+    border: 3px solid white;
+    box-shadow: -3px -3px 5px;
+}
+.first{
+    border: 1px solid rgb(112, 207, 245);
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+}
+.first #text_img{
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.first h1{
+    color: violet;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cuisto{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.cuisto h3{
+    color:blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+.cuisto div{
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 10px;
+    width: 50%;
+}
+.cuisto div li{
+    border: 1px solid violet;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 25%;
+    height: auto;
+    background-color: white;
+}
+.cuisto div ul, div ol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cuisto div li:hover{
+    border: none;
+    cursor: pointer;
+    color: rgb(120, 120, 247);
+    background-color: azure;
+    font-size: large;
+}
+.cuisto #etapes{
+    margin-left: 20px;
+}
+.form{
+    border: 1px skyblue solid;
+    margin: 10px;
+}
+.form form{
+    height: 350px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 3px solid white;
+    box-shadow: 6px 6px 7px;
+    border-radius: 20px;
+    padding-top: 40px; 
+    background-image: url(./Coeur-Pile_pomme.jpg);
+    background-size: cover;
+    width: 450px;
+}
+label{
+    color: white;
+}
+input, textarea{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 200px;
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 10px;
+    border: 2px solid rgb(241, 241, 179);
+}
+form h2{
+    margin-bottom: 30px;
+    background-color: aliceblue;
+    background-size: cover;
+    color: blueviolet;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form button{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: yellow;
+    background-color: red;
+    border: 3px solid green;
+    border-radius: 10px;
+}
+form button:hover{
+    cursor: pointer;
+    border: 3px solid yellow;
+    color: green;
+}
+body{
+    background-color: azure;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(232, 247, 250);
+    margin-top: 20px;
+    border: 1px solid skyblue;
+}
+footer img{
+    height: 50px;
+    width: 50px;
+}
+footer div{
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    border: 2px rgb(188, 242, 249) solid;
+    border-radius: 20px;
+    background-color: azure;
+}
+footer div h2{
+    color: blueviolet;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer a:hover{
+    color: blue;
+    font-size: large;
+}
+
+
+@media screen and (max-width : 768px){
+    
+    *{
+        font-size: large;
+    }
+    header{
+        width: 100%;
+        height: auto;
+    }
+    header #logo *{
+        font-size: xx-large;
+    }
+    header nav {
+        margin-right: 20px;
+    }
+    header nav ul li{
+        padding-bottom: 10px;
+    }
+    header #logo{
+        display: flow-root;
+        width: 30%;
+        margin-left: 10px;
+    }
+    .first img{
+        width: 98%;
+        height: 45%;
+    }
+    .cuisto{
+        display: flow-root;
+    }
+    .cuisto div{
+        margin-bottom: 20px;
+        width: 96%;
+    }
+    .cuisto #etapes{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .cuisto div li{
+        width: 40%;
+        height: auto;
+        font-size: larger;
+    }
+    section{
+        width: 96%;
+    }
+    header h1{
+        margin-left: 0px;
+        color: green;
+    }
+    header nav ul{
+        display: flow-root;
+        list-style: none;
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+    .form form{
+        width: 96%;
+    }
+
+    footer{
+        display: flow-root;
+        width: 96%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    body{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+}
